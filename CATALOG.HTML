@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СВЕТ.BY - Каталог Электроники</title>
-    <!-- Подключение Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom styles for the Inter font and smooth transitions */
@@ -37,7 +36,6 @@
 
     <div id="app" class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
 
-        <!-- 1. Название "СВЕТ.BY" -->
         <header class="text-center py-6 border-b border-gray-200">
             <h1 class="text-5xl font-extrabold text-primary-blue tracking-tighter">
                 СВЕТ.<span class="text-secondary-teal">BY</span>
@@ -45,7 +43,6 @@
             <p class="mt-1 text-lg text-gray-500">Ваш агрегатор электроники</p>
         </header>
 
-        <!-- 2. Рекламный баннер -->
         <section class="mt-8 mb-10">
             <div class="bg-gradient-to-r from-primary-blue to-secondary-teal text-white p-6 sm:p-8 rounded-xl shadow-lg flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                 <div>
@@ -58,7 +55,6 @@
             </div>
         </section>
 
-        <!-- 3. Поисковая строка -->
         <section class="mb-10">
             <div class="relative">
                 <input
@@ -74,17 +70,16 @@
             </div>
         </section>
 
-        <!-- 4. Товары (Каталог) -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-gray-800 mb-6">Каталог товаров</h2>
 
             <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
-                <!-- Товар 1: Люстра -->
                 <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:border-secondary-teal cursor-pointer" data-keywords="люстра свет потолочный LED Skyscraper хром">
                     <div class="h-48 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder Image (Люстра) -->
-                        <img src="https://placehold.co/150x150/0070f3/ffffff?text=Chandelier" alt="Люстра" onerror="this.onerror=null; this.src='https://placehold.co/150x150/0070f3/ffffff?text=Chandelier';" class="max-h-full max-w-full object-contain rounded">
+                        <svg class="h-24 w-24 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 17v5m6.44-4.506a7 7 0 00-12.88 0M18 10a6 6 0 11-12 0A6 6 0 0118 10z"></path>
+                        </svg>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold text-gray-900 truncate">Люстра "Небоскреб"</h3>
@@ -99,11 +94,11 @@
                     </div>
                 </div>
 
-                <!-- Товар 2: Светильник настенный -->
                 <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:border-secondary-teal cursor-pointer" data-keywords="светильник бра настенный LED Wave">
                     <div class="h-48 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder Image (Светильник) -->
-                        <img src="https://placehold.co/150x150/00a39d/ffffff?text=Lamp" alt="Светильник настенный" onerror="this.onerror=null; this.src='https://placehold.co/150x150/00a39d/ffffff?text=Lamp';" class="max-h-full max-w-full object-contain rounded">
+                        <svg class="h-24 w-24 text-secondary-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h10a2 2 0 012 2v1h-3.35c-.868 0-1.7.352-2.3.968-.6.616-.95 1.45-.95 2.3v1h-3z"></path>
+                        </svg>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold text-gray-900 truncate">Светильник настенный "Wave"</h3>
@@ -117,11 +112,11 @@
                     </div>
                 </div>
 
-                <!-- Товар 3: Настольная лампа -->
                 <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:border-secondary-teal cursor-pointer" data-keywords="настольная лампа офис D10 usb">
                     <div class="h-48 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder Image (Настольная лампа) -->
-                        <img src="https://placehold.co/150x150/f37000/ffffff?text=Desk+Lamp" alt="Настольная лампа" onerror="this.onerror=null; this.src='https://placehold.co/150x150/f37000/ffffff?text=Desk+Lamp';" class="max-h-full max-w-full object-contain rounded">
+                        <svg class="h-24 w-24 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold text-gray-900 truncate">Настольная лампа D10</h3>
@@ -135,11 +130,11 @@
                     </div>
                 </div>
 
-                <!-- Товар 4: Фонарик -->
                 <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:border-secondary-teal cursor-pointer" data-keywords="фонарик ручной кемпинг T9 1000 люмен">
                     <div class="h-48 bg-gray-100 flex items-center justify-center p-4">
-                        <!-- Placeholder Image (Фонарик) -->
-                        <img src="https://placehold.co/150x150/8a2be2/ffffff?text=Flashlight" alt="Фонарик тактический" onerror="this.onerror=null; this.src='https://placehold.co/150x150/8a2be2/ffffff?text=Flashlight';" class="max-h-full max-w-full object-contain rounded">
+                        <svg class="h-24 w-24 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
                     </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold text-gray-900 truncate">Фонарик тактический T9</h3>
@@ -150,37 +145,4 @@
                         </div>
                         <button class="mt-4 w-full bg-secondary-teal text-white py-2 rounded-lg font-medium hover:bg-primary-blue transition duration-300">
                             Подробнее
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Добавьте больше товаров здесь, используя шаблон product-card -->
-
-            </div>
-        </section>
-
-    </div>
-
-    <!-- JavaScript для функционала поиска (фильтрации) -->
-    <script>
-        // Function to filter products based on search input
-        function filterProducts() {
-            const searchInput = document.getElementById('searchInput');
-            const filter = searchInput.value.toLowerCase();
-            const productCards = document.querySelectorAll('.product-card');
-
-            productCards.forEach(card => {
-                // Get keywords from data-keywords attribute
-                const keywords = card.getAttribute('data-keywords');
-                
-                // Check if the card's keywords contain the filter text
-                if (keywords.includes(filter)) {
-                    card.style.display = ''; // Show the product
-                } else {
-                    card.style.display = 'none'; // Hide the product
-                }
-            });
-        }
-    </script>
-</body>
-</html>
+                        </button
